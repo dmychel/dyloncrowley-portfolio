@@ -6,8 +6,6 @@ import { gitIMG } from "./img";
 import { webpackIMG } from "./img";
 import { linuxIMG } from "./img";
 
-console.log(htmlIMG)
-
 // create elements
 const aboutSection = document.createElement('section');
 const workSection = document.createElement('section');
