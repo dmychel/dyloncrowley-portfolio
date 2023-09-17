@@ -26,6 +26,7 @@ export function createDOM() {
     createAbout()
     createWork()
     createStack()
+    createContact()
 }
 
 function createAbout() {
@@ -91,5 +92,23 @@ function createStack() {
 }
 
 function createContact() {
+    contactSection.innerHTML = `
+    <h2>Contact</h2>
+    <div class="form-container">
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
 
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="yourEmail@mail.com" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </form>
+    </div>`
 }
