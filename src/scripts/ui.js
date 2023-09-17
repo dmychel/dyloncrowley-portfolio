@@ -1,4 +1,13 @@
 import { renderProject } from "./dynamicUI";
+import { htmlIMG } from "./img";
+import { cssIMG } from "./img";
+import { jsIMG } from "./img";
+import { gitIMG } from "./img";
+import { webpackIMG } from "./img";
+import { linuxIMG } from "./img";
+
+console.log(htmlIMG)
+
 // create elements
 const aboutSection = document.createElement('section');
 const workSection = document.createElement('section');
@@ -9,8 +18,6 @@ export function createDOM() {
     const main = document.querySelector('main')
 
     // assign class and ids
-    aboutSection.classList = 'about'
-    aboutSection.id = 'about'
     workSection.classList = 'work'
     workSection.id = 'work'
     stackSection.classList = 'stack'
@@ -18,44 +25,14 @@ export function createDOM() {
     contactSection.classList = 'contact'
     contactSection.id = 'contact'
 
-    main.appendChild(aboutSection);
+
     main.appendChild(workSection);
     main.appendChild(stackSection);
     main.appendChild(contactSection);
 
-    createAbout()
     createWork()
     createStack()
     createContact()
-}
-
-function createAbout() {
-    aboutSection.innerHTML = `
-    <header class="header">
-    <div class="name">
-        <span>Dylon Crowley</span>
-    </div>
-    <div class="nav">
-        <nav class="nav-header" id="header">
-            <ul>
-                <li><a href="">Dev-View</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<div class="container">
-    <div class="hero-container">
-        <span class="hero" id="hero"></span>
-    </div>
-    <div class="arrow-container fadeIn-animation" id="arrowContainer">
-        <a href="#work"><img src="img/down.png" alt="Down Arrow"></a>
-        <a href="#work"><img src="img/down.png" alt="Down Arrow"></a>
-        <a href="#work"><img src="img/down.png" alt="Down Arrow"></a>
-    </div>
-</div>`
 }
 
 export function createWork() {
@@ -68,7 +45,7 @@ export function createWork() {
 
     const videGameArchive = {
         title: 'Video Game Archive',
-        image: 'link',
+        src: '/',
         link: 'https://dmychel.github.io/dyloncrowley-portfolio/pages/terminal.html',
         description: 'Introducing a user-friendly archive that captures essential details about your games. You can add any game from any generation,console, and genre. You even have the ability to add a picture for coverart.'
     };
@@ -80,14 +57,14 @@ export function createWork() {
 
 function createStack() {
     stackSection.innerHTML = `
-        <h2>Stack</h2>
+        <h2> Stack</h2 >
         <div class="stack-img">
-        <img src="#" alt="#">
-            <img src="" alt="#">
-            <img src="" alt="#">
-            <img src="" alt="#">
-            <img src="" alt="#">
-            <img src="" alt="#">
+            <img src="${htmlIMG.src}" alt="HTML 5">
+            <img src="${cssIMG.src}" alt="CSS">
+            <img src="${jsIMG.src}" alt="Javascript">
+            <img src="${gitIMG.src}" alt="Git">
+            <img src="${webpackIMG.src}" alt="Webpack">
+            <img src="${linuxIMG.src}" alt="GNU Linux">
         </div>`
 }
 
