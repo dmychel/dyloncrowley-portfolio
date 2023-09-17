@@ -5,6 +5,10 @@ import { jsIMG } from "./img";
 import { gitIMG } from "./img";
 import { webpackIMG } from "./img";
 import { linuxIMG } from "./img";
+import { weatherIMG } from "./img";
+import { gameArchiveIMG } from "./img";
+import { terminalIMG } from "./img";
+import { streetFighterCombatIMG } from "./img";
 
 // create elements
 const aboutSection = document.createElement('section');
@@ -36,19 +40,33 @@ export function createDOM() {
 export function createWork() {
     const weatherAPP = {
         title: 'Weather App',
-        image: 'heres a link',
+        image: `${weatherIMG.src}`,
         link: 'https://dmychel.github.io/weather-app/',
         description: 'This is a simple weather app that uses a API from weatherapi. This app includes the ability to search cities and change the weather information from fahrenheit to celsius. The app has a couple of other features worth reading about in the README on the github repo.'
     };
 
     const videGameArchive = {
         title: 'Video Game Archive',
-        src: '/',
-        link: 'https://dmychel.github.io/dyloncrowley-portfolio/pages/terminal.html',
+        image: `${gameArchiveIMG.src}`,
+        link: 'https://dmychel.github.io/game-archive/',
         description: 'Introducing a user-friendly archive that captures essential details about your games. You can add any game from any generation,console, and genre. You even have the ability to add a picture for coverart.'
     };
 
-    const projects = [weatherAPP, videGameArchive]
+    const terminal = {
+        title: 'Terminal Portfolio',
+        image: `${terminalIMG.src}`,
+        link: '',
+        description: 'One of my favorite projects - my portfolio in a terminal-style interface! As a GNU Linux enthusiast, creating this mock terminal has been an exhilarating experience. The interface boasts an array of terminal commands, thoughtfully implemented using a comprehensive switch statement.'
+    }
+
+    const streetFighterCombat = {
+        title: 'Street Fighter Combat',
+        image: `${streetFighterCombatIMG.src}`,
+        link: 'https://dmychel.github.io/street-fighter-combat/',
+        description: '  This project is an engaging and innovative take on the traditional Rock Paper Scissors game. It features a dynamic and interactive user interface with turn-based combat elements, character selections, and health bars, all achieved through dynamic DOM manipulation.'
+    }
+
+    const projects = [weatherAPP, videGameArchive, terminal, streetFighterCombat]
 
     renderProject(projects)
 }
