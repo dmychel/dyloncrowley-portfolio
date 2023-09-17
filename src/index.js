@@ -1,3 +1,4 @@
 import './styles/main.css'
+import { createDOM } from './scripts/ui'
 
-console.log('hello world')
+createDOM()
