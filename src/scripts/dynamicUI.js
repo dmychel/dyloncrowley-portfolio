@@ -1,7 +1,5 @@
 import { createWork } from "./ui";
 
-
-
 export function renderProject(project) {
     // create elements
     const workSection = document.querySelector('#work');
@@ -17,7 +15,7 @@ export function renderProject(project) {
     projectsContainer.innerHTML = '';
     for (let i = 0; i < project.length; i++) {
         let title = project[i].title;
-        let image = project[i].imgage;
+        let image = project[i].image;
         let link = project[i].link;
         let description = project[i].description
 
@@ -25,7 +23,7 @@ export function renderProject(project) {
         let projectDiv = document.createElement('div')
         projectDiv.innerHTML = `
         <div class="project-img">
-            <img src="#" alt="#">
+            <img src="${image}" alt="thumbnail">
         </div>
         <div class="project-info">
             <h2><a href="${link}" target="_blank">${title}</a></h2>
@@ -35,3 +33,4 @@ export function renderProject(project) {
         projectsContainer.appendChild(projectDiv)
     };
 }
+
