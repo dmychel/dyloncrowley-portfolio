@@ -55,7 +55,7 @@ export function createWork() {
     const terminal = {
         title: 'Terminal Portfolio',
         image: `${terminalIMG.src}`,
-        link: '',
+        link: 'https://dmychel.github.io/terminal-portfolio/',
         description: 'One of my favorite projects - my portfolio in a terminal-style interface! As a GNU Linux enthusiast, creating this mock terminal has been an exhilarating experience. The interface boasts an array of terminal commands, thoughtfully implemented using a comprehensive switch statement.'
     }
 
