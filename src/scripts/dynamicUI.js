@@ -4,6 +4,7 @@ export function renderProject(project) {
     // create elements
     const workSection = document.querySelector('#work');
     const projectsContainer = document.createElement('div');
+    projectsContainer.classList = 'project-container'
 
     // content
     workSection.innerHTML = '<h2>Projects</h2>'
