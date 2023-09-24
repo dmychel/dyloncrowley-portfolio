@@ -31,6 +31,7 @@ export function renderProject(project) {
             <p>${description}</p>
         </div>`
 
+        projectDiv.classList = 'card'
         projectsContainer.appendChild(projectDiv)
     };
 }
