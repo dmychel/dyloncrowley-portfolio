@@ -305,10 +305,38 @@ body {
 
 /* TABLETS */
 @media (max-width:768px) {
+  .about {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    border: 2px solid;
+  }
+
+  .left-about {
+    width: 100%;
+  }
+
+  .left-about p {
+    width: 100%;
+  }
+
+  .right-about {
+    width: 100%;
+  }
+
+  .right-about img {
+    max-height: 250px;
+    max-width: 250px;
+  }
+
   .project-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%
+  }
+
+  .card {
+    width: 350px;
   }
 
   form {
