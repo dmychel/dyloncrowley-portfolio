@@ -308,7 +308,6 @@ body {
   .about {
     flex-direction: column-reverse;
     justify-content: space-evenly;
-    border: 2px solid;
   }
 
   .left-about {
