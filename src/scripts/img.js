@@ -9,6 +9,7 @@ import gameArchive from '../img/thumbnail/game-archive.jpg'
 import streetFighterCombat from '../img/thumbnail/street-combat-thumbnail.png'
 import terminal from '../img/thumbnail/terminal-thumbnail.jpg'
 import weather from '../img/thumbnail/weather-app-thumbnail.jpg'
+import hero from '../img/hero.JPG'
 
 export const cssIMG = new Image()
 export const htmlIMG = new Image()
@@ -23,6 +24,9 @@ export const streetFighterCombatIMG = new Image()
 export const terminalIMG = new Image()
 export const weatherIMG = new Image()
 
+export const heroIMG = new Image()
+export const backgroundIMG = new Image()
+
 cssIMG.src = cssPNG
 htmlIMG.src = htmlPNG
 jsIMG.src = jsPNG
@@ -35,3 +39,5 @@ gameArchiveIMG.src = gameArchive
 streetFighterCombatIMG.src = streetFighterCombat
 terminalIMG.src = terminal
 weatherIMG.src = weather
+
+heroIMG.src = hero
