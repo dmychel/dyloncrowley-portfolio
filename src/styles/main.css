@@ -1,5 +1,4 @@
 :root {
-  --main-color: #618264;
   --font-color: #D0E7D2;
   --secondary-color: #2f492f;
   --accent-color: #ece81efa;
@@ -10,10 +9,11 @@
 * {
   margin: 0;
   padding: 0;
+  transition: all 0.25s ease-out;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--main-color);
   color: var(--font-color);
 }
 
@@ -21,6 +21,7 @@ section {
   padding: 20px;
   margin-bottom: 5%;
 }
+
 
 .about {
   display: flex;
@@ -35,6 +36,7 @@ section {
   align-items: center;
   width: 50%;
   gap: 1.5em;
+  z-index: 1;
 }
 
 .left-about h1 {
@@ -52,19 +54,20 @@ section {
   align-items: center;
 }
 
-.about-name {
-  font-size: 3rem;
-  color: var(--accent-color);
-}
-
-.about img {
+.right-about img {
   height: 300px;
   width: 300px;
   object-fit:cover;
   object-position: -.5%;
   border-radius: 50%;
-  filter: drop-shadow(0 0 0.75rem rgb(11, 233, 200));
+  filter: drop-shadow(0 0 0.75rem rgba(11, 233, 200, 0.233));
 }
+
+.about-name {
+  font-size: 3rem;
+  color: var(--accent-color);
+}
+
 
 /* WORK */
 .work {
@@ -263,6 +266,26 @@ textarea {
 
 .nav a:hover {
   color: var(--font-color);
+}
+
+/* background animation*/
+body {
+  background: linear-gradient(125deg, rgb(0, 0, 0) 11.2%, rgb(16, 151, 167) 91.1%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @media (max-width: 1200px) {
