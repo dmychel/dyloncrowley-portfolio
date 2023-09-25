@@ -49,7 +49,7 @@ function createAbout(){
         <div class="left-about">
             <h1>Hi, I'm<br><span class="about-name">Dylon</span></h1>
             <p>
-                A self taught web developer with a burning passion to learn and create. All of my coding projects are built form the ground up, from coding to UI design.
+                A self taught web developer with a burning passion to learn and create. All of my coding projects are built from the ground up, from coding to UI design.
             </p>
         </div>
         <div class="right-about">
