@@ -9,8 +9,11 @@ import { weatherIMG } from "./img";
 import { gameArchiveIMG } from "./img";
 import { terminalIMG } from "./img";
 import { streetFighterCombatIMG } from "./img";
+import { heroIMG } from "./img";
 
 // create elements
+const body = document.querySelector('body');
+const header = document.createElement('header');
 const aboutSection = document.createElement('section');
 const workSection = document.createElement('section');
 const stackSection = document.createElement('section');
@@ -20,22 +23,39 @@ export function createDOM() {
     const main = document.querySelector('main')
 
     // assign class and ids
-    workSection.classList = 'work'
-    workSection.id = 'work'
-    stackSection.classList = 'stack'
-    stackSection.id = 'stack'
-    contactSection.classList = 'contact'
-    contactSection.id = 'contact'
+    aboutSection.classList = 'about';
+    aboutSection.id = 'about';
+    workSection.classList = 'work';
+    workSection.id = 'work';
+    stackSection.classList = 'stack';
+    stackSection.id = 'stack';
+    contactSection.classList = 'contact';
+    contactSection.id = 'contact';
 
-
+    body.appendChild(header)
+    main.appendChild(aboutSection);
     main.appendChild(workSection);
     main.appendChild(stackSection);
     main.appendChild(contactSection);
 
-    createWork()
-    createStack()
-    createContact()
+    createAbout();
+    createWork();
+    createStack();
+    createContact();
 }
+
+function createAbout(){
+    aboutSection.innerHTML = `
+        <div class="left-about">
+            <h1>Hi, I'm<br><span class="about-name">Dylon</span></h1>
+            <p>
+                A self taught web developer with a burning passion to learn and create. All of my coding projects are built form the ground up, from coding to UI design.
+            </p>
+        </div>
+        <div class="right-about">
+            <img src="${heroIMG.src}" alt="hero image">
+        </div>`
+};
 
 export function createWork() {
     const weatherAPP = {
@@ -69,7 +89,7 @@ export function createWork() {
     const projects = [weatherAPP, videGameArchive, terminal, streetFighterCombat]
 
     renderProject(projects)
-}
+};
 
 function createStack() {
     stackSection.innerHTML = `
@@ -104,4 +124,4 @@ function createContact() {
             <input type="submit" name="submit" id="submit" value="Submit">
         </form>
     </div>`
-}
+};
