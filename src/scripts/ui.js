@@ -1,10 +1,4 @@
 import { renderProject } from "./dynamicUI";
-import { htmlIMG } from "./img";
-import { cssIMG } from "./img";
-import { jsIMG } from "./img";
-import { gitIMG } from "./img";
-import { webpackIMG } from "./img";
-import { linuxIMG } from "./img";
 import { weatherIMG } from "./img";
 import { gameArchiveIMG } from "./img";
 import { terminalIMG } from "./img";
