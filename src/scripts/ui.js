@@ -95,12 +95,12 @@ function createStack() {
     stackSection.innerHTML = `
         <h2> Stack</h2 >
         <div class="stack-img">
-            <img src="${htmlIMG.src}" alt="HTML 5">
-            <img src="${cssIMG.src}" alt="CSS">
-            <img src="${jsIMG.src}" alt="Javascript">
-            <img src="${gitIMG.src}" alt="Git">
-            <img src="${webpackIMG.src}" alt="Webpack">
-            <img src="${linuxIMG.src}" alt="GNU Linux">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML 5">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Javascript">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" alt="Webpack">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-plain.svg" alt="GNU Linux">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="Jest">
         </div>`
 }
