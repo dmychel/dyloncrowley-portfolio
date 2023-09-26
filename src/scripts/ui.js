@@ -101,6 +101,7 @@ function createStack() {
             <img src="${gitIMG.src}" alt="Git">
             <img src="${webpackIMG.src}" alt="Webpack">
             <img src="${linuxIMG.src}" alt="GNU Linux">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="Jest">
         </div>`
 }
 
